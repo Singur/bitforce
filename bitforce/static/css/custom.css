@@ -1,0 +1,352 @@
+/*===================*/
+/* General */
+/*===================*/
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+	background:#212121;
+	font-family: 'Source Sans Pro';
+	font-size:1.1em;
+	line-height: 1.4em;
+	color:#fff;
+}
+
+h1, h4, a {
+	font-family: 'Source Sans Pro';
+	font-size:1.1em;
+	line-height: 1.4em;
+	color:#fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix {
+	display:block;
+	clear:both;
+}
+
+
+#top-container {
+	background:url(../img/topbg.png);
+}
+
+.logo {
+	margin-top:25px;
+}
+
+.nav {
+	float:right;
+}
+
+.nav li {
+	display:inline;
+	float:left;
+	margin:30px 0 0 45px;
+}
+
+.nav a {
+	color:#fff;
+}
+
+.nav a:hover {
+	color:gray;
+}
+
+.wallet {
+	margin: 0 auto;
+	display:block;
+}
+
+h1 {
+	font-size:2.8em;
+}
+
+.main-content {
+	padding: 165px 0;
+}
+
+.cost {
+	font-size:2.6em;
+	display:block;
+	margin-top:15px;
+}
+
+p {
+	margin: 30px 0 45px 0;
+}
+
+.cta {
+	background:#00ff9c;
+	border-radius: 8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	color: #000;
+	padding: 10px;
+	font-size: 1.8em;
+	display: block;
+	text-align: center;
+}
+
+.cta:hover {
+	background:#67ffc4;
+}
+
+.mid-container {
+	background:#000;
+	text-align:center;
+	padding-bottom:25px;
+}
+
+blockquote {
+	border-left:none;
+}
+
+blockquote p {
+	font-size:2em;
+	color:#fff;
+	margin: 30px 0 5px 0;
+}
+
+cite {
+	color:#afafaf;
+	font-size:1em;
+	margin-bottom:30px;
+	display:block;
+}
+
+.mid2-container {
+	background:#232323;
+	padding:160px 0;
+}
+
+.flr {
+	float:right;
+}
+
+.center-t {
+	margin: 0 auto;
+	display:block;
+}
+
+.mid-t {
+	color:#c6c6c6;
+}
+
+#slide-l-container, #slide-r-container, .cta-l {
+	visibility: hidden;
+}
+
+.split-c {
+	margin-bottom:150px;
+}
+
+#r-align {
+	text-align:right;
+}
+
+.header-unit {
+	height:650px;
+	width:100%;
+	position:relative;
+}
+.video-container {
+	position:absolute;
+	top: 0%;
+	left: 0%;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+video {
+	position:absolute;
+	z-index:-20;
+}
+
+.fill-width {
+	width:100%;
+}
+
+#play-container {
+	display:block;
+	margin: 0 auto;
+}
+
+.play {
+	width:400px;
+	margin: 0 auto;
+	padding-left:25px;
+	display:block;
+	position: relative;
+  	top: 50%;
+}
+
+.play:before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	border-left: 24px solid #fff;
+  	border-top: 24px solid transparent;
+  	border-bottom: 24px solid transparent;
+  	top: 18px;
+
+}
+
+.play h4 {
+	color:#fff;
+	font-size:3em;
+	text-indent:50px;
+}
+
+
+#lower-container {
+	background:url(../img/bottombg.png);
+	padding:165px 0;
+	margin-bottom:400px;
+}
+
+.center-lower {
+	margin: 0 auto;
+	display:block;
+	text-align:center;
+}
+
+.menu {
+	display: none;
+	background: url(../img/menu.png) no-repeat;
+	width: 40px;
+	height: 29px;
+	float: right;
+	text-indent: -5000px;
+	margin: -25px 20px 20px 0;
+}
+
+@media only screen and (max-width: 40.063em) {
+
+	h1 {
+		font-size:2em;
+	}
+
+	blockquote p {
+		font-size:1.5em;
+	}
+
+	video {
+		display:none;
+	}
+
+}
+
+@media only screen and (min-width: 64.063em) {
+	.play:before {
+		top: 18px;
+	}
+}
+
+@media only screen and (max-width: 64.063em) {
+
+	.main-content, #lower-container {
+		padding: 65px 0;
+	}
+
+	h1, p, .cost, #r-align {
+		text-align:center;
+	}
+
+	.cost {
+		margin-bottom:25px;
+	}
+
+	.mid2-container {
+		padding:60px 0;
+	}
+
+
+	.split-c {
+		margin-bottom:60px;
+	}
+
+	.cta-l {
+		width:80%;
+		margin:0 auto;
+	}
+
+	.video-container, .header-unit {
+		height:300px;
+	}
+
+	.play {
+		font-size:.9em;
+		height:100px;
+	}
+
+	.nav {
+		display:none;
+	}
+
+	.menu {
+		display:block;
+	}
+
+	ul {
+
+		width:100%;
+		display:block;
+		margin:0;padding:0;
+		clear:both;
+	}
+
+	.nav li {
+		display:block;
+		clear:both;
+		background:#181818;
+		width:100%;
+		margin:0;
+		border-bottom:1px solid #3a3a3a;
+	}
+
+	.nav li:hover {
+		background:#252525;
+	}
+
+	.nav a {
+		color:#fff;
+		margin-left:15px;
+		display:block;
+		padding:10px 0;
+	}
+
+	.nav a:hover {
+		color:#fff;
+	}
+
+	.removep {
+		padding:0;
+	}
+	
+	.play:before {
+		top: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 24em) {
+
+	.logo {
+		width:70%;
+	}
+	.play:before {
+		top: 5px;
+	}
+
+}
